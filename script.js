@@ -14,7 +14,7 @@ const randomNum=Math.floor(Math.random()*49+1);
                 let result;
                 if(guess>50||guess<1){
                     result="Your guess should be 1 to 50";
-                    resultDiv.innerHTML=`<h4>${result}</h4>`;
+                    resultDiv.innerHTML=`<h5>${result}</h5>`;
                 }
 
             //console.log(guess);
