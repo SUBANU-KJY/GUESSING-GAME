@@ -1,0 +1,64 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: alias;
+}
+.message{
+text-align: center;
+color:white;
+padding:35px;
+font-size:27px;
+}
+body{
+    background-image: url(https://wallpaperaccess.com/full/5160830.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.wrapper{
+    line-height:60px;
+}
+    .numbox{
+    height:30px;
+    width: 60px;
+    border-radius:15px;
+} 
+.button{
+    display: flex;
+    justify-content: space-around;
+
+}
+.submit{
+background-color: black;
+color: white;
+padding:5px;
+border:1px solid black;
+border-radius: 5px;
+}
+.replay{
+    background-color: black;
+    color: white;
+    padding:5px;
+    border:1px solid black;
+    border-radius: 5px;
+
+}
+.result{
+    color:white;
+    font-size: 20px;
+    text-shadow: 3px 0px blue, 0px 3px blueviolet, 3px 0px blue, 0px 3px blueviolet;
+}
+.history{
+    color:white;
+    text-shadow: 2px 0px blue, 0px 2px blueviolet, 2px 0px blue, 0px 2px blueviolet;
+    line-height:30px;
+}
+.chances{
+    color:white;
+}
