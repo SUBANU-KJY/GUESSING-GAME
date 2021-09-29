@@ -10,13 +10,18 @@ const randomNum=Math.floor(Math.random()*49+1);
         let win=false;
 
             function game(){
-                if(chances&&!win){
-                const guess=userGuess.value;
+              const guess=userGuess.value;
                 let result;
-            console.log(guess);
+                if(guess>50||guess<1){
+                    result="Your guess should be 1 to 50";
+                    resultDiv.innerHTML=`<h3>${result}</h3>`;
+                }
+
+            //console.log(guess);
           // console.log(randomNum);
+         else if(chances&&!win){
             if(randomNum==guess){
-                result=`✨YOU WON THE GAME!!!✨<br>Congradulations😍!!`;
+                result=`✨YOU WON THE GAME!!!✨<br>Congradulations✨😍!!!`;
                 win=true;
             }else if(randomNum>guess){
                 if(chances==1){
