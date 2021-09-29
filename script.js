@@ -16,19 +16,19 @@ const randomNum=Math.floor(Math.random()*49+1);
             console.log(guess);
           // console.log(randomNum);
             if(randomNum==guess){
-                result="YOU WON THE GAME!!!";
+                result=`✨YOU WON THE GAME!!!✨<br>Congradulations😍!!`;
                 win=true;
             }else if(randomNum>guess){
                 if(chances==1){
                     result=`GAME OVER!<br>The number is ${randomNum}`;
                 }else{
-                result="YOU GUESSED LOW";
+                result="YOU GUESSED LOW 😒";
                 }
             }else if(randomNum<guess) {
                 if(chances==1){
                     result=`GAME OVER!<br>The number is ${randomNum}`;
                 }else{
-                result="YOU GUESSED HIGH";
+                result="YOU GUESSED HIGH 😒";
             }
         }
         

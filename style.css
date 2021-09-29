@@ -20,7 +20,7 @@ body{
     font-size: 60px;
     text-align: center;
     color:white;
-    text-shadow: 6px 0px blue, 0px 6px blueviolet, 6px 0px blue, 0px 6px blueviolet;
+    text-shadow: 6px 0px blue, 0px 4px blueviolet, 6px 0px blue, 0px 4px blueviolet;
 }
 #gamepage{
     padding: 9px;
