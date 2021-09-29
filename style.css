@@ -4,9 +4,10 @@
     box-sizing:border-box;
 }
 body{
-    background-image:url(https://i.pinimg.com/736x/3a/6b/5c/3a6b5cf53aa2f8d5170a953637980624.jpg);
+    /* background-image:url(https://i.pinimg.com/736x/3a/6b/5c/3a6b5cf53aa2f8d5170a953637980624.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:cover; */
+    background-color:black;
 }
 #wrapper{
     display: flex;
