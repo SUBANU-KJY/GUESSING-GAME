@@ -1,10 +1,11 @@
 const randomNum=Math.floor(Math.random()*49+1);
-    console.log(randomNum);
+    //console.log(randomNum);
 
         const userGuess=document.querySelector(".numbox");
         const resultDiv=document.querySelector(".result");
         const historyDiv=document.querySelector(".history");
         const submitButton=document.querySelector(".submit");
+        const S=document.querySelector("#chancesdisplay");
        // console.log(userGuess);
         let chances=3;
         let win=false;
@@ -25,30 +26,30 @@ const randomNum=Math.floor(Math.random()*49+1);
                 win=true;
             }else if(randomNum>guess){
                 if(chances==1){
-                    result=`GAME OVER!<br>The number is ${randomNum}`;
+                    result=`GAME OVER!
+                    The number is ${randomNum}`;
                 }else{
                 result="YOU GUESSED LOW 😒";
                 }
             }else if(randomNum<guess) {
                 if(chances==1){
-                    result=`GAME OVER!<br>The number is ${randomNum}`;
+                    result=`GAME OVER! 
+                    The number is <b>${randomNum}</b>`;
                 }else{
                 result="YOU GUESSED HIGH 😒";
             }
         }
-        
-
+        S.innerHTML=`${chances}`;
             chances--;
-           historyDiv.innerHTML +=` YOU GUESSED ${guess}<br>`;
+        historyDiv.innerHTML +=` YOU GUESSED ${guess}<br>`;
             return resultDiv.innerHTML=`${result}`;
-           
             
             }
         }
-        
     
         function refresh(){
             if(!chances||win)
             location.reload();
         }
+        
         

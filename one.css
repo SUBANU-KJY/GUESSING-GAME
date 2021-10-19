@@ -8,24 +8,25 @@
 .message{
 text-align: center;
 color:white;
-padding:35px;
+
 font-size:27px;
 }
 body{
-    background-image: url(https://wallpaperaccess.com/full/5160830.jpg);
+    background-image: url(neonbg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
     display: flex;
     flex-direction: column;
     text-align: center;
+    min-height:100vh;
     
 }
 .wrapper{
     line-height:60px;
 }
     .numbox{
-    height:30px;
+    height:33px;
     width: 60px;
     border-radius:15px;
 } 
@@ -40,6 +41,7 @@ color: white;
 padding:5px;
 border:1px solid black;
 border-radius: 5px;
+margin-right:1rem;
 }
 .replay{
     background-color: black;
@@ -61,4 +63,8 @@ border-radius: 5px;
 }
 .chances{
     color:white;
+}
+#chancesdisplay{
+    color:white;
+    text-shadow: 1px 1px 1px violet, 1px 1px 1px pink;
 }
